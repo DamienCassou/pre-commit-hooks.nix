@@ -164,5 +164,11 @@ in
           files = "\\.rs$";
           pass_filenames = false;
         };
+      eslint = {
+        name = "eslint";
+        description = "Find and fix problems in your JavaScript code";
+        entry = "${tools.eslint}/bin/eslint";
+        types = [ "javascript" ];
+      };
     };
 }

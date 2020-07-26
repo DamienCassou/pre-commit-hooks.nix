@@ -114,6 +114,10 @@ used at the same time.
 
 - `terraform-format`: built-in formatter
 
+## JavaScript
+
+- [eslint](https://eslint.org/)
+
 # Contributing hooks
 
 Everyone is encouraged to add new hooks.
