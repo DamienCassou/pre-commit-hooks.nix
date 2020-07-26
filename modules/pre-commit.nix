@@ -110,6 +110,12 @@ let
                   description = "Whether to pass filenames as arguments to the entry point.";
                   default = true;
                 };
+              additional_dependencies =
+                mkOption {
+                  type = types.nullOr (types.listOf types.str);
+                  description = "A list of dependencies that will be installed in the environment where this hook gets run. One useful application is to install plugins for hooks such as eslint.";
+                  default = null;
+                };
             };
           config =
             {
